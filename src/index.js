@@ -1,13 +1,13 @@
 import './styles.css';
 import { loadMenu } from './menu';
 import { pageLoad } from './page-load';
-import { loadContact } from './contact';
+import { loadStaff } from './staff';
 
 function tabSwitcher() {
     const content = document.querySelector('#content');
     const homeBtn = document.querySelector('.home');
     const menuBtn = document.querySelector('.menu');
-    const contactBtn = document.querySelector('.contact');
+    const contactBtn = document.querySelector('.staff');
 
     homeBtn.addEventListener('click', () => {
         content.textContent = '';
@@ -21,7 +21,7 @@ function tabSwitcher() {
     
     contactBtn.addEventListener('click', () => {
         content.textContent = '';
-        loadContact();
+        loadStaff();
     });
 }
 
